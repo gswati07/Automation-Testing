@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Custom Test Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Selected Classes and Methods(failed)">
+    <classes>
+      <class name="test.ExampleClass2">
+        <methods>
+          <include name="launchBrowserTest"/>
+          <include name="setupClass"/>
+          <include name="teardownClass"/>
+        </methods>
+      </class> <!-- test.ExampleClass2 -->
+    </classes>
+  </test> <!-- Selected Classes and Methods(failed) -->
+</suite> <!-- Failed suite [Custom Test Suite] -->

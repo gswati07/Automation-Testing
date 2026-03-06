@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Custom Test Suite" verbose="1">
+    
+    <test name="Selected Classes and Methods">
+        <classes>
+            <!-- Run all tests from Day1 -->
+            <class name="test.ExampleClass1"/>
+            
+            <!-- Run specific methods from Day2 -->
+            <class name="test.ExampleClass2">
+                <methods>
+                    <include name="launchBrowserTest"/>
+                    <exclude name="loginWithMultipleUsers"/>
+                </methods>
+            </class>
+            
+            <!-- Run methods matching regex from Day3 -->
+            <class name="test.ExampleClass3">
+                <methods>
+                    <include name="API.*"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    
+</suite>
